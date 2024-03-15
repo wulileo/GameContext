@@ -1,0 +1,61 @@
+架构
+	帧驱动（UE类似）
+	可以把业务理解为推送到主进程中处理（UE主进程单进程，xajh应该是业务线程组（未确认））
+	接收消息存入结构，等待帧末统一处理，串行化的方式提升效率（不会出现竞争资源的情况（大概），所以不需要锁）
+	所有的rpc调用其实都是推到指定线程执行，调用栈变化，调用时机不可控，可以使用promise实现顺序rpc和依赖rpc，但需要考虑效率
+
+Manager
+	一般会有一个Manager的单例类 继承自ManagerBase（这个类实现单例）
+	在这个类里面实现具体逻辑
+
+Service
+	服务类，一般需要什么样的业务会需要service呢？
+	有tick需求或者有定时任务的业务会需要service类
+	可以简单理解为不同线程，当然service是一个比线程更细的调度单元（其实就是同一个线程可能记录了多个service）
+
+Node
+	服务器实例
+
+Port
+	线程实例
+
+配置
+
+消息
+	写Xx.protol文件
+	创建XxMsgHandler.java文件
+		编写onXx方法，添加@Receiver(Xx.class)注解
+
+数据库
+	写EntityXx.java
+		@Entity(entityName="Xx", tableName="g_xx", superEntity=EntityXx.class) superEntity是指会具有父类实体的全部字段
+		@Colume(type="INT", comment="XX") 定义字段类型
+	生成Xx.java文件，会带有@GenEntityFile的注解
+		setXX()和getXX()
+
+串行化（持久化）
+
+事件
+	定义事件
+		在EventKey中定义事件名 public static final String XX = "XX";
+	监听事件
+		一般会在各模块中的Manager中监听，定义方法onXx，使用@Linstener注解
+	发布事件
+		Event.fire(EventKey.XX)
+	
+定时器 （只可以在Service中使用）
+	使用@TimingMethod注解定时（注解可以配置多个）
+		"[秒] [分] [时] [日期] [月份] [星期] [年]"
+		("0 0 5 ? * 1-4") 0秒，0分，5点，?日， 所有月， 周一到周四， 年忽略
+		意味每周一到周四5点触发
+	使用@TimingMethod注解按照配置定时
+		@TimingMethod(value="Xx.XX", key=true)
+	使用new TimingImplExpression()
+	使用new TimingImplInterval()
+		开始时间，执行间隔，执行次数
+
+待办
+	处理玩家不在线的逻辑（例如玩家离线时，帮会同意加入），添加一个待办，在玩家重新上线的时候通过事件触发执行
+
+代理回调（RPC）
+	需要获取其他service中数据的方法回调

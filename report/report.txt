@@ -1,0 +1,27 @@
+bd1500dd97 - denghong, Thu Mar 14 10:39:36 2024 +0800 : XAJH-34554 【武圣之道】道具修复
+15e9f0ec98 - denghong, Tue Mar 5 16:54:05 2024 +0800 : XAJH-34275 【0307】宠物御装图鉴及魂印下阵需求
+4701ce9de1 - denghong, Fri Mar 1 10:42:12 2024 +0800 : XAJH-34277 【0307】侠客隐市显示下期侠客
+bc6532506b - denghong, Thu Feb 29 15:49:39 2024 +0800 : 配置提交
+52b31e2454 - denghong, Thu Feb 29 15:48:48 2024 +0800 : XAJH-33798 【重点优化】0314武圣之道优化
+e250a76c7e - denghong, Mon Feb 26 16:42:56 2024 +0800 : XAJH-34275 【0307】宠物御装图鉴及魂印下阵需求
+8721492d93 - denghong, Thu Feb 22 17:44:51 2024 +0800 : 配置提交
+94a6fb7940 - denghong, Thu Feb 29 17:40:34 2024 +0800 : XAJH-34083 【0229】玩家意见收集系统功能需求
+ba6b1fecbe - denghong, Thu Feb 29 14:34:13 2024 +0800 : 配置提交
+16ced23173 - denghong, Thu Feb 29 14:32:36 2024 +0800 : XAJH-34279 【0229】装备铭刻转换功能
+84fd32b046 - denghong, Wed Feb 21 16:45:42 2024 +0800 : Merge remote-tracking branch 'origin/1.2024.0.0/0229' into 1.26.0.0/base
+50073115d2 - denghong, Mon Feb 5 16:50:14 2024 +0800 : XAJH-34083 【0229】玩家意见收集系统功能需求
+063907782b - denghong, Mon Feb 5 16:47:12 2024 +0800 : XAJH-34083 【0229】玩家意见收集系统功能需求
+aa672929e6 - denghong, Mon Feb 5 16:44:19 2024 +0800 : 配置提交
+8fd079c86b - denghong, Tue Jan 30 14:28:33 2024 +0800 : 配置提交
+35faf2431c - denghong, Tue Jan 30 14:28:19 2024 +0800 : XAJH-33798 【重点优化】0314武圣之道优化
+a62885ab4d - denghong, Tue Jan 30 11:37:32 2024 +0800 : XAJH-33798 【重点优化】0314武圣之道优化
+39e46b4b25 - denghong, Sat Jan 27 16:56:51 2024 +0800 : XAJH-33798 【重点优化】0314武圣之道优化
+d6bcb88c61 - denghong, Thu Jan 25 11:25:14 2024 +0800 : XAJH-33798 【重点优化】0314武圣之道优化
+d4a2138365 - denghong, Thu Jan 25 10:43:07 2024 +0800 : 配置提交
+3acbf8b444 - denghong, Thu Jan 25 10:42:19 2024 +0800 : XAJH-33798 【重点优化】0314武圣之道优化
+329ede0aab - denghong, Wed Jan 10 14:26:41 2024 +0800 : XAJH-33880 【0111】厨神争霸优化方案
+4efa80d228 - denghong, Mon Jan 8 21:10:14 2024 +0800 : XAJH-33880 【0111】厨神争霸优化方案
+a2c4a2feb5 - denghong, Thu Jan 4 20:17:12 2024 +0800 : XAJH-33880 【0111】厨神争霸优化方案
+c5d670599b - denghong, Thu Jan 4 20:15:48 2024 +0800 : 配置更新
+6475bb3a6e - denghong, Fri Jan 12 22:40:30 2024 +0800 : XAJH-33898 领土战存在竞拍bug
+8b6119c2c8 - denghong, Thu Dec 14 17:44:56 2023 +0800 : XAJH-33658 【后台】清理单个玩家罪恶值，并清理buff（仅服务端）
